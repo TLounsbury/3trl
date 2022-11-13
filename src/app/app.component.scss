@@ -1,0 +1,26 @@
+/* Importing 5 different Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&display=swap');
+
+.changing-logo {
+    font-size: 30pt;
+    color: #6aafffbd;
+    font-family: 'Exo', sans-serif;
+    animation-name: fontRightToLeft;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    
+    animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes fontRightToLeft {
+    0% {
+        position: relative;
+        left: 110%;
+        opacity: 0%;
+      }
+    100% {
+        position: relative;
+        left: 0%;
+        opacity: 100%;
+      }
+}
